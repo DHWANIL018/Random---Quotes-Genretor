@@ -1,0 +1,37 @@
+    <!-- Shree Ganeshay namah  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <p id="qutoes" class="text-center"></p>
+    <main class="d-flex justify-content-center ">
+    <button onclick="mynum()" class="btn btn-outline-primary">CLick</button>
+    </main>
+
+    <script>
+    let qutoes = document.getElementById('qutoes')  
+    let randomarr = ["The only way to do great work is to love what you do. - Steve Jobs",
+                        "In the end, it's not the years in your life that count. It's the life in your years. - Abraham Lincoln",
+                        "Be the change that you wish to see in the world. - Mahatma Gandhi",
+                        "The only thing necessary for the triumph of evil is for good men to do nothing. - Edmund Burke",
+                        "Life is what happens when you're busy making other plans. - John Lennon",
+                        "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+                        "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+                        "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. - Albert Einstein",
+                        "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. - Ralph Waldo Emerson",
+                        "The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela"
+
+
+        ]
+    const mynum = ()=>{
+        let val = Math.ceil(Math.random() * 9)
+        qutoes.innerHTML = randomarr[val]
+    }
+    </script>
+</body>
+</html>
